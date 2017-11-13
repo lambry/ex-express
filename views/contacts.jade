@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+
+  section(class='row')
+    each contact in contacts
+      article(class='col')
+        h2
+          span= contact.name
+          span(class='badge')= contact.position
+        p= contact.blurb
+
+  a(href='/' class='button') Home

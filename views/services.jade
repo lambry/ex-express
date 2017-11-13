@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+
+  section(class='row')
+    each service in services
+      article(class='col')
+        h3= service.title
+        p= service.description
+
+  a(href='/' class='button') Home

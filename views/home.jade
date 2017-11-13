@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+
+  div(class='row')
+    nav(class='col nav')
+      div(class='nav-heading') Pages
+      div(class='nav-items')
+        a(href='/services' class='nav-item') Services
+        a(href='/contacts' class='nav-item') Contacts
+
+    nav(class='col nav')
+      div(class='nav-heading') Posts
+      div(class='nav-items')
+        each post in posts
+          a(href='/posts/' + post.slug class='nav-item')= post.title

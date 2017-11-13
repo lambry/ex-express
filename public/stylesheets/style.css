@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #464646;
+    padding: 1rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    margin: 0.5rem 0 1.5rem;
+}
+h1 {
+    font-size: 1.9rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+h4 {
+    font-size: 1rem;
+}
+p {
+    margin: 0.5rem 0 2.5rem;
+    text-align: justify;
+}
+a {
+    color: #06b4a6;
+    text-decoration: none;
+}
+a:hover {
+    color: #0697b4;
+}
+.button {
+    border: 1px solid currentColor;
+    padding: 0.5rem 1.25rem;
+    margin: 0.5rem 0;
+}
+
+/* Layout */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin: 0 -1rem;
+}
+.col {
+    flex-basis: 100%;
+    margin: 0 1rem;
+}
+@media (min-width: 960px) {
+    .col {
+        flex: 1;
+    }
+}
+
+/* Nav */
+.nav {
+    background-color: #fbfbfb;
+}
+.nav-heading {
+    background-color: #06b4a6;
+    color: #FFF;
+    padding: 1rem;
+}
+.nav-items {
+    padding: 0.5rem 0;
+}
+.nav-item {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+/* Misc */
+.badge {
+    margin: 0 1rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    background-color: #fbfbfb;
+}
