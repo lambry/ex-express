@@ -10,7 +10,6 @@ router.get('/', function (req, res, next) {
         attributes: ['title', 'slug']
     }).then(posts => {
         res.render('home', {
-            title: 'Example Express App',
             posts: posts.map(post => post.dataValues)
         });
     });

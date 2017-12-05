@@ -1,12 +1,12 @@
 extends layout
 
 block content
-  h1= title
+  h2= title
 
   section(class='row')
     each contact in contacts
       article(class='col')
-        h2
+        h3
           span= contact.name
           span(class='badge')= contact.position
         p= contact.blurb

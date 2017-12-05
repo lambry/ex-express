@@ -10,9 +10,9 @@ html {
 
 body {
     color: #464646;
-    padding: 1rem;
+    padding: 2.5rem 1.25rem;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -21,13 +21,16 @@ body {
 
 /* Typography */
 h1, h2, h3, h4 {
-    margin: 0.5rem 0 1.5rem;
+    margin: 1.5rem 0;
 }
 h1 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0;
 }
 h2 {
     font-size: 1.6rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 h3 {
     font-size: 1.3rem;
@@ -49,7 +52,7 @@ a:hover {
 .button {
     border: 1px solid currentColor;
     padding: 0.5rem 1.25rem;
-    margin: 0.5rem 0;
+    margin: 1.25rem 0;
 }
 
 /* Layout */
@@ -77,6 +80,7 @@ a:hover {
 /* Nav */
 .nav {
     background-color: #fbfbfb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .nav-heading {
     background-color: #06b4a6;

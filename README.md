@@ -1,3 +1,3 @@
 # EX Express
 
-A super tiny express example app.
+A super basic express (example) app utilzing nodemon, sqlite and sequelize.
